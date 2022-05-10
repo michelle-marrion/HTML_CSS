@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire</title>
+	<link rel="stylesheet" type="text/css" href="formulaire.css">
+</head>
+<body>
+
+	<div id="bloc_form">
+		<form method="post" action="traitement.php">
+			<fieldset>
+				<legend> Vos Cordonnées</legend>
+				<p>
+					<!-- Zone de texte -->
+					<label for="pseudo"> Votre Pseudo :</label>
+					<input type="text" name="pseudo" id="pseudo" placeholder="Ex : Michelle" size="30" maxlength="10" autofocus="" required="">
+					
+					<br>
+					<br>
+					<!-- Mot de passe -->
+					<label for="password">Votre mot de passe :</label>
+					<input type="password" name="password" id="password"size="24" maxlength="10">
+					
+					<br>
+					<br>
+					<!-- Adresse mail -->
+					<label for="mail">Votre Email :</label>
+					<input type="email" name="mail" id="mail" placeholder="Ex : ngamimarrion@gmail.com" size="31" maxlength="10">
+					
+					<br>
+					<br>
+					<!-- URL -->
+					<label for="site"> URL de votre site web :</label>
+					<input type="url" name="site" id="site" placeholder="https://ngamimarrion.com/index.html" size="50" maxlength="30">
+					
+					<br>
+					<br>
+					<!-- Téléphone -->
+					<label for="phone">Votre numéro de téléphone :</label>
+					<input type="tel" name="phone" id="phone" placeholder="Ex: +237 6 73 66 71 39" size="30" maxlength="10">
+
+					<br>
+					<br>
+					<!-- Nombre -->
+					<label for="number">Votre chiffre favoris :</label>
+					<input type="number" name="number" id="number" size="30" maxlength="5">
+					
+					<br>
+					<br>
+					<!-- Nombre sur barre -->
+					<label for="numbers">Range</label>
+					<input type="range" name="numbers" id="numbers">
+					
+					<br>
+					<br>
+					<!-- Couleur -->
+					<label for="color">Votre couleur :</label>
+					<input type="color" name="color" id="color">
+					
+					<br>
+					<br>
+					<!-- Date -->
+					<label for="date">Date :</label>
+					<input type="date" name="date" id="date">
+					
+					<br>
+					<br>
+					<!--La recherche -->
+					<label for="search">Votre recherche :</label>
+					<input type="search" name="search" id="search">
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend> Vos préférences</legend>
+			<!--Choix -->
+				<p>
+					<!-- Checkbox ou case à cocher -->
+					<p>
+						Cochez les aliments que vous aimez manger  : <br>
+						<input type="checkbox" name="frites" id="frites" checked="" /> <label for="frites">Frites</label><br />
+				        <input type="checkbox" name="steak" id="steak" /> <label for="steak">Steak haché</label><br />
+				        <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">Epinards</label><br />
+				        <input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">Huitres</label>
+					</p>
+				</p>
+
+				<p>
+					<!-- Zone d'option -->
+					<p>
+						Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :
+						<br />
+				       	<input type="radio" name="age" value="moins15" id="moins15" checked="" /> <label for="moins15">Moins de 15 ans</label><br />
+				       	<input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
+				       	<input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+				       	<input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+					</p>
+			       	<p>
+				       Sur quel continent habitez-vous ?
+				       <br />
+				       <input type="radio" name="continent" value="europe" id="europe" /> <label for="europe">Europe</label><br />
+				       <input type="radio" name="continent" value="afrique" id="afrique" /> <label for="afrique">Afrique</label><br />
+				       <input type="radio" name="continent" value="asie" id="asie" /> <label for="asie">Asie</label><br />
+				       <input type="radio" name="continent" value="amerique" id="amerique" /> <label for="amerique">Amérique</label><br />
+				       <input type="radio" name="continent" value="australie" id="australie" /> <label for="australie">Australie</label>
+		   			</p>
+				</p>
+				<!-- Liste déroulante -->
+				<p>
+					<label for="pays">Dans quel pays habitez-vous ?</label>
+					
+					<br />
+		       		
+		       		<select name="pays" id="pays">
+		       			<optgroup label="Europe">
+			       			<option value="france">France</option>
+				           	<option value="espagne">Espagne</option>
+				           	<option value="italie">Italie</option>
+				           	<option value="royaume-uni">Royaume-Uni</option>
+		       			</optgroup>
+
+			           	<optgroup label="Amerique">
+			       			<option value="canada">Canada</option>
+				           	<option value="etats-unis" selected>États-Unis</option>
+				           	<option value="chine">Chine</option>
+				           	<option value="japon">Japon</option>
+		       			</optgroup>
+		       		</select>
+				</p>
+			</fieldset>
+			<fieldset>
+		        <legend>Votre souhait</legend> <!-- Titre du fieldset -->
+		 
+		        <p>
+		           Faites un souhait que vous voudriez voir exaucé :
+
+		           <input type="radio" name="souhait" value="riche" id="riche" /> <label for="riche">Etre riche</label>
+		           <input type="radio" name="souhait" value="celebre" id="celebre" /> <label for="celebre">Etre célèbre</label>
+		           <input type="radio" name="souhait" value="intelligent" id="intelligent" /> <label for="intelligent">Etre <strong>encore</strong> plus intelligent</label>
+		           <input type="radio" name="souhait" value="autre" id="autre" /> <label for="autre">Autre...</label>
+		        </p>
+		 
+		        <p>
+		           <label for="precisions">Si "Autre", veuillez préciser :</label>
+		           <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+		        </p>
+   			</fieldset>
+			<fieldset>
+				<legend>Vos Commentaires : </legend>
+				<p>
+					<label for="ameliorer"> Comment pensez-vous que je pourrais améliorer mon site ?</label>
+					<br>
+					<br>
+					<textarea name="ameliorer" id="ameliorer" maxlength="50" rows="10" cols="50" placeholder="Améliorer ton site ?!
+		       			Mais enfin ! Il est tellement génialissime qu'il n'est pas nécessaire de l'améliorer !"></textarea>
+				</p>
+			</fieldset>
+			
+			<div class="decision" style="">
+				<input type="submit" value="Envoyer" id="send" />
+				<input type="reset" value="Annuler" id="reset" />
+			</div>
+			
+	</form>
+	</div>
+</body>
+</html>

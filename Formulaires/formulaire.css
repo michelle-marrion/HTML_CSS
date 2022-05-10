@@ -1,0 +1,43 @@
+#bloc_form
+{
+
+	   width: 900px;
+	   /*text-align: center;*/
+	   margin: auto;
+	   padding-left: 30px
+	 ;
+	   border:1px solid gray;
+}
+/*
+:required
+{
+    background-color: red;
+}
+*/
+.decision
+{
+	margin:50px;
+	display: flex;
+	justify-content: space-between;
+}
+#reset
+{
+	width:auto;
+	height: 50px;
+	color:white;
+	background-color: #EC7063;
+	font-family: Montserrat, sans-serif;
+	font-size: 1.5em;
+	border:none;
+	border-radius: 2px;
+}
+#send
+{
+	height: 50px;
+	color:white;
+	background-color:#2E86C1 ;
+	font-family: Montserrat, sans-serif;
+	font-size: 1.5em;
+	border:none;
+	border-radius: 2px;
+}
