@@ -1,0 +1,17 @@
+table
+{
+	border-collapse: collapse; /*Coller les bordures des cellules*/
+	  width: 400px;
+    margin: auto;
+}
+td,th /*toutes les cellules du tableau*/
+{
+	border:1px solid black;
+}
+/*Titre du tableau*/
+caption
+{
+	font-family: Montserrat ExtraBold, sans-serif;
+	color:#1B2631;
+	padding: 10px;
+}
